@@ -20,6 +20,9 @@ spec:
           image: shankarnarayana/clientapp:appimage
           ports:
             - containerPort: 80
+          env:
+            - name: DB_HOST
+              value: mysqldb
           resources:
             requests:
               cpu: "100m"
