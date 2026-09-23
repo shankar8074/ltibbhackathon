@@ -24,6 +24,7 @@ spec:
           volumeMounts:
             - name: www
               mountPath: /var/lib/mysql
+              subPath: mysql
           resources:
             requests:
               cpu: "100m"
